@@ -1,0 +1,85 @@
+.hero-section {
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    height: 100vh;
+
+    .image-container {
+        flex: 1;
+
+        img {
+            max-width: 100%;
+            height: 100vh;
+        }
+    }
+
+    .text-container {
+        flex: 1;
+        color: $primary-color;
+        padding-left: 100px;
+
+        .value {
+            padding-right: 100px;
+
+            h1 {
+                font-size: 68px;
+                margin-bottom: 10px;
+                font-family: $font-family-base;
+                font-weight: 500;
+            }
+
+            p {
+                font-size: 18px;
+                color: #2C1500;
+                margin-bottom: 20px;
+                font-family: $font-family-base;
+            }
+        }
+
+        .buttons {
+            height: 20vh;
+            position: absolute;
+            bottom: 0;
+            right: 2vh;
+            display: flex;
+
+            p {
+                color: #333333;
+                margin-bottom: 1vh;
+            }
+
+            .btn {
+                width: 40vh;
+                text-align: left;
+                background-color: transparent;
+                border: none;
+                color: $primary-color;
+                padding: 15px 30px;
+                cursor: pointer;
+                font-family: $font-family-base;
+                font-size: 1.2em;
+                transition: background-color 0.3s, transform 0.3s;
+
+                &:hover {
+                    background-color: $primary-color;
+
+                    h3 {
+                        color: $secondary-color;
+                    }
+
+                    p {
+                        color: #F2F2F2;
+                    }
+                }
+
+                &.previous {
+                    margin-right: 0px;
+                }
+
+                &.next {
+                    margin-left: 0px;
+                }
+            }
+        }
+    }
+}

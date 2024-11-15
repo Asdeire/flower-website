@@ -1,0 +1,53 @@
+.site-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent;
+    padding: 10px 20px;
+    font-family: $font-family-base;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+
+    .logo {
+        font-size: 24px;
+        color: $primary-color;
+        background-color: transparent;
+        padding: 5px 10px;
+    }
+
+    .auth-buttons {
+        display: flex;
+        gap: 10px;
+    
+
+        .sign-up-btn,
+        .sign-in-btn,
+        .search-icon,
+        .user-icon {
+            background-color: transparent;
+            color: $primary-color;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            font-family: $font-family-base;
+            transition: transform 0.2s ease-in-out;
+
+            &:hover {
+                background-color: lighten($secondary-color, 10%);
+                transform: scale(1.1);
+            }
+        }
+
+        .sign-in-btn {
+            background-color: $primary-color;
+            color: $secondary-color;
+
+            &:hover {
+                background-color: darken($primary-color, 10%);
+                transform: scale(1.1);
+            }
+        }
+    }
+}
