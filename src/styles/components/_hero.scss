@@ -10,6 +10,7 @@
         img {
             max-width: 100%;
             height: 100vh;
+            transition: opacity 0.2s ease-in-out;
         }
     }
 
@@ -40,45 +41,57 @@
             height: 20vh;
             position: absolute;
             bottom: 0;
-            right: 2vh;
+            right: 0;
             display: flex;
 
             p {
                 color: #333333;
                 margin-bottom: 1vh;
+                transition: opacity 0.2s ease-in-out;
+            }
+        }
+    }
+
+    .fade {
+
+        img,
+        h1,
+        p {
+            opacity: 0;
+            transition: opacity 0.2s ease-in-out;
+        }
+    }
+
+    @media (max-width: 768px) {
+        flex-direction: column;
+        height: auto;
+        text-align: center;
+        padding: 20px;
+
+        .image-container {
+            img {
+                max-width: 80%; // Зменшення ширини для мобільних
+                height: auto;
+            }
+        }
+
+        .text-container {
+            padding-left: 0;
+
+            .value {
+                padding-right: 0;
+
+                h1 {
+                    font-size: 2rem;
+                }
+
+                p {
+                    font-size: 0.9rem;
+                }
             }
 
-            .btn {
-                width: 40vh;
-                text-align: left;
-                background-color: transparent;
-                border: none;
-                color: $primary-color;
-                padding: 15px 30px;
-                cursor: pointer;
-                font-family: $font-family-base;
-                font-size: 1.2em;
-                transition: background-color 0.3s, transform 0.3s;
-
-                &:hover {
-                    background-color: $primary-color;
-
-                    h3 {
-                        color: $secondary-color;
-                    }
-
-                    p {
-                        color: #F2F2F2;
-                    }
-                }
-
-                &.previous {
-                    margin-right: 0px;
-                }
-
-                &.next {
-                    margin-left: 0px;
-                }
+            .buttons {
+                justify-content: center;
             }
         }
     }

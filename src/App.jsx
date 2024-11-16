@@ -4,6 +4,8 @@ import Hero from "./components/Hero";
 import Advantages from "./components/Advantages";
 
 import "./styles/main.scss";
+import FeaturedPlants from "./components/FeaturedPlants";
+import RelaxedSection from "./components/RelaxedSection";
 
 function App() {
   return (
@@ -11,6 +13,8 @@ function App() {
       <Header />
       <Hero />
       <Advantages />
+      <FeaturedPlants/>
+      <RelaxedSection/>
     </div>
   );
 }

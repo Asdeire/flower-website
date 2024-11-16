@@ -2,7 +2,7 @@
     background-color: $secondary-color;
     font-family: $font-family-base;
     margin: 15vh 0;
-    padding: 0 5vh;
+    padding: 0 3rem;
 
     &__container {
         display: flex;
@@ -14,7 +14,7 @@
         border: solid 2px #E0E0E0;
         color: $primary-color;
         padding: 20px;
-        margin: 0 20px;
+        margin: 0 10px;
         text-align: left;
         display: flex;
         flex-direction: column;

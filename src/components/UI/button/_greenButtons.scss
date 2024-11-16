@@ -1,0 +1,29 @@
+$primary-color: rgba(21, 105, 99, 1);
+$secondary-color: #ffffff;
+
+$font-family-base: 'Montserrat', sans-serif;
+
+.btn {
+    width: 40vh;
+    text-align: left;
+    background-color: transparent;
+    border: none;
+    color: $primary-color;
+    padding: 15px 30px;
+    cursor: pointer;
+    font-family: $font-family-base;
+    font-size: 1.2em;
+    transition: background-color 0.3s, transform 0.3s;
+
+    &:hover {
+        background-color: $primary-color;
+
+        h3 {
+            color: $secondary-color;
+        }
+
+        p {
+            color: #F2F2F2;
+        }
+    }
+}
