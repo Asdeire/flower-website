@@ -22,6 +22,7 @@
         max-width: 50%;
 
         @media (max-width: 768px) {
+            max-width: 100%;
             text-align: center;
         }
     }
@@ -88,6 +89,33 @@
         img {
             max-width: 100%;
             object-fit: cover;
+        }
+    }
+
+    @media (max-width: 480px) {
+        padding: 0 2rem;
+
+        &__content {
+            gap: 3rem;
+        }
+
+        &__title {
+            font-size: 1.8rem;
+        }
+
+        &__description {
+            font-size: 0.9rem;
+        }
+
+        &__image--left,
+        &__image--right {
+            max-width: 250px;
+        }
+    }
+
+    @media (max-width: 1000px) {
+        .relaxed-section__image--left {
+            display: none;
         }
     }
 }

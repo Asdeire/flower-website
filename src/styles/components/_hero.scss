@@ -62,15 +62,16 @@
         }
     }
 
-    @media (max-width: 768px) {
+    @media (max-width: 1000px) {
         flex-direction: column;
         height: auto;
         text-align: center;
         padding: 20px;
+        height: 100vh;
 
         .image-container {
             img {
-                max-width: 80%; // Зменшення ширини для мобільних
+                max-width: 80%;
                 height: auto;
             }
         }
@@ -87,6 +88,40 @@
 
                 p {
                     font-size: 0.9rem;
+                }
+            }
+
+            .buttons {
+                justify-content: center;
+            }
+        }
+    }
+
+    @media (max-width: 480px) {
+        flex-direction: column;
+        height: auto;
+        text-align: center;
+        padding: 10px;
+
+        .image-container {
+            img {
+                max-width: 100%;
+                height: auto;
+            }
+        }
+
+        .text-container {
+            padding-left: 0;
+
+            .value {
+                padding-right: 0;
+
+                h1 {
+                    font-size: 1.8rem;
+                }
+
+                p {
+                    font-size: 0.8rem;
                 }
             }
 

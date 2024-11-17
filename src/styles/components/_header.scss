@@ -49,4 +49,52 @@
             }
         }
     }
+
+    @media (max-width: 768px) {
+        padding: 10px 15px;
+
+        .logo {
+            font-size: 20px;
+        }
+
+        .auth-buttons {
+            gap: 5px;
+
+            .sign-up-btn,
+            .sign-in-btn,
+            .search-icon,
+            .user-icon {
+                padding: 8px 15px;
+                font-size: 14px;
+            }
+
+            .sign-in-btn {
+                padding: 8px 15px;
+            }
+        }
+    }
+
+    @media (max-width: 480px) {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+
+        .logo {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        .auth-buttons {
+            flex-wrap: wrap;
+            gap: 5px;
+
+            .sign-up-btn,
+            .sign-in-btn,
+            .search-icon,
+            .user-icon {
+                padding: 8px 10px;
+                font-size: 12px;
+            }
+        }
+    }
 }
