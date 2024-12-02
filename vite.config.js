@@ -34,5 +34,6 @@ export default defineConfig({
     },
   },
 
-  plugins: [react(), svgr()] 
+  plugins: [react(), svgr()],
+  base: "/flower-website",
 });
